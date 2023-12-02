@@ -1,0 +1,333 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
+/* Fonts */
+/* Utilities */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: "Oswald", sans-serif;
+  overflow: hidden;
+}
+h4 {
+  color: #bab9b8;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: -15px;
+}
+h5 {
+  color: #fb626a;
+  font-weight: 400;
+}
+.black-h5 {
+  color: black;
+}
+h3 {
+  font-size: 12px;
+  margin-top: 30px;
+}
+h1 {
+  font-size: 18px;
+  height: 120px;
+  width: 250px;
+  margin-top: 10px;
+}
+p {
+  color: #bab9b8;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 170%;
+}
+/* Objects */
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: in ease 1s forwards;
+}
+.rating-div {
+  display: flex;
+}
+.rating {
+  margin-right: 10px;
+  color: #fb626a;
+}
+.card {
+  display: flex;
+  width: 650px;
+  height: 460px;
+  margin: auto;
+}
+.content-picture {
+  position: relative;
+  flex: 0 0 35%;
+  background-image: linear-gradient(-180deg, #71fec9 0%, #49c7c9 100%);
+  box-shadow: -20px 40px 70px 0px rgba(73, 200, 201, 0.5);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.content-picture li {
+  list-style-type: none;
+  display: inline-block;
+  background: #fff;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin: 0 5px 80px;
+  cursor: pointer;
+}
+.content-picture #grey {
+  background: #3a9a96;
+}
+.content-picture #grey2 {
+  background: #3a9a96;
+}
+.brand img {
+  top: 50px;
+  position: absolute;
+  width: 70px;
+  filter: invert(100%);
+}
+.photo {
+  position: absolute;
+  /* transform: rotate(-25deg); */
+  top: 100px;
+  right: 30px;
+}
+.photo img {
+  width: 300px;
+  filter: drop-shadow(-1px 22px 15px rgba(0, 0, 0, 0.25));
+  mix-blend-mode: multiply;
+  border-radius: 22px;
+}
+.content-text {
+  padding: 0 40px;
+  background: #fff;
+  box-shadow: -20px 40px 70px 0px rgba(0, 0, 0, 0.25);
+  flex: 0 1 65%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header i {
+  color: #fa6069;
+  /* margin: 40px 2px; */
+  font-size: 12px;
+}
+.specs {
+  display: flex;
+  justify-content: flex-start;
+}
+.specs hr {
+  border: 0;
+  height: 60px;
+  width: 2px;
+  background: #bab9b8;
+  opacity: 0.3;
+  margin-top: -65px;
+}
+.specs p {
+  font-size: 15px;
+  margin-top: -2px;
+}
+.specs p:after {
+  margin-left: 15px;
+  font-family: FontAwesome;
+  content: "\f107";
+}
+.colors {
+  flex: 0 1 45%;
+}
+.colors .mint {
+  width: 15px;
+  height: 15px;
+  background: #5fe7c7;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 3px;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 0px 2px #5fe7c7;
+}
+.colors .yellow {
+  width: 15px;
+  height: 15px;
+  background: #feed79;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 3px;
+  border: 2px solid #fff;
+}
+.colors .violet {
+  width: 15px;
+  height: 15px;
+  background: #6657ac;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 3px;
+  border: 2px solid #fff;
+}
+.colors .black {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 3px;
+  border: 2px solid #fff;
+}
+.colors .grey {
+  width: 15px;
+  height: 15px;
+  background: grey;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 3px;
+  border: 2px solid #fff;
+}
+.size {
+  flex: 0 1 35%;
+}
+.call_to {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: end;
+}
+.call_to i.fa-share-alt {
+  font-size: 25px;
+  color: #bab9b8;
+  margin-top: 55px;
+}
+.button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-image: linear-gradient(-180deg, #fd886e 0%, #fc3e65 100%);
+  box-shadow: 1px 9px 17px 0px rgba(252, 75, 104, 0.49);
+  border-radius: 7px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.button span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+}
+.button i {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 8px;
+}
+.button:hover i {
+  animation: shake 500ms ease;
+}
+/*Animations*/
+@keyframes in {
+  0% {
+    transform: translateY(-500px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Radio Buttons By K.R */
+label {
+  width: 24px;
+  margin-right: 5px;
+}
+input.radio:empty {
+  margin-left: -9999px;
+  display: none;
+}
+input.radio:empty ~ label {
+  position: relative;
+  float: left;
+  line-height: 24px;
+  text-indent: 3.25em;
+  cursor: pointer;
+  user-select: none;
+}
+input.radio:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #ccc;
+  border-radius: 50px;
+  border: 4px solid #fff;
+}
+/* toggle on */
+input.radio:checked ~ label:before {
+  content: "";
+}
+input#radio1 ~ label:before {
+  background-color: #59e8c8;
+  margin-left: 2px;
+}
+#radio1:checked ~ label:before {
+  box-shadow: 0px 0px 0px 1px #59e8c8;
+}
+input#radio2 ~ label:before {
+  background-color: #ffee71;
+}
+#radio2:checked ~ label:before {
+  box-shadow: 0px 0px 0px 1px #ffee71;
+}
+input#radio3 ~ label:before {
+  background-color: #6654af;
+}
+#radio3:checked ~ label:before {
+  box-shadow: 0px 0px 0px 1px #6654af;
+}
+input#radio4 ~ label:before {
+  background-color: #343434;
+}
+#radio4:checked ~ label:before {
+  box-shadow: 0px 0px 0px 1px #343434;
+}
+input#radio5 ~ label:before {
+  background-color: #dfdfdf;
+}
+#radio5:checked ~ label:before {
+  box-shadow: 0px 0px 0px 1px #dfdfdf;
+}
