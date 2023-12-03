@@ -8,19 +8,14 @@ function Home() {
   // states
   const [details, setDetails] = useState({
     _id: "656b0cbfa7c6f6544a757933",
-    url: "https://www.amazon.in/boAt-Rockerz-255-Pro-Earphones/dp/B08TV2P1N8/ref=sr_1_3?crid=9G5BMKWGINVB&keywords=neckband%2Bearphones&qid=1701514409&sprefix=neckan%2Caps%2C319&sr=8-3&th=1",
-    title:
-      "boAt Rockerz 255 Pro+ Bluetooth Neckband with Upto 60 Hours Playback",
-    features: [
-      "Playback- Leave all charging worries at bay as the Rockerz 255 Pro+ comes with a humongous battery back up of 60 Hours",
-      "ASAP Charge- With a few minutes of ASAP Charge you can get upto 10 hours of audio time by charging them for only 10 mins",
-    ],
-    imgUrl:
-      "https://m.media-amazon.com/images/I/31HCup1pqFL._SX300_SY300_QL70_ML2_.jpg",
+    url: "",
+    title: "",
+    features: [],
+    imgUrl: "",
     inStock: true,
     rating: 3.1,
-    exp_price: 1100,
-    curr_price: 1199,
+    exp_price: 0,
+    curr_price: 0,
     email: "mohammedthalha2209@gmail.com",
     __v: 0,
   });
