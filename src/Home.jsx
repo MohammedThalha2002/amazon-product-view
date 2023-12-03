@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Rating } from "react-simple-star-rating";
 
 function Home() {
   const { id } = useParams();
@@ -36,7 +35,7 @@ function Home() {
 
   const fetchData = async () => {
     await axios
-      .get(import.meta.env.VITE_BACKEND_URL + "/track-details/id/" + id)
+      .get(import.meta.env.VITE_BACKEND_URL + "/track-detail-by-id/" + id)
       .then((res) => {
         console.log(res.data);
         setDetails(res.data);
