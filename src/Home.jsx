@@ -46,9 +46,6 @@ function Home() {
           <div className="photo">
             <img src={details.imgUrl} />
           </div>
-          <li />
-          <li id="grey" />
-          <li id="grey2" />
         </div>
         <div className="logo" />
         <div className="content-text">
